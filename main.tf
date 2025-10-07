@@ -157,6 +157,9 @@ module "ecs" {
             "ecr:BatchCheckLayerAvailability",
             "ecr:GetDownloadUrlForLayer",
             "ecr:BatchGetImage",
+            "logs:CreateLogStream",
+            "logs:CreateLogGroup",
+            "logs:PutLogEvents"
           ]
           resources = ["*"]
         }
